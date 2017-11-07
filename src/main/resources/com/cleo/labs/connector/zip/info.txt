@@ -1,0 +1,1 @@
+This connector supports browsing a ZIP archive.
