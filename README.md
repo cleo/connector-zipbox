@@ -5,8 +5,7 @@ technologies to be plugged in to be configured and used by the administrator.
 
 This sample project provides an extended example of a connector, intended to expand
 on the concept introduced in the
-[Random](https://github.com/jthielens/connector-random/blob/master/README.md)
-connector.
+[Random]((https://github.com/jthielens/connector-random/) connector.
 It provides support for handling ZIP archives as if they were expanded folders,
 including uploading and downloading files and manipulation of directories.
 For example, if a Zip connection is used as a VersaLex user's home directory,
@@ -38,8 +37,9 @@ and run the action.  You will find a 1k (1024 byte) file of nulls in `inbox/test
 ## New Connector Shell Concepts ##
 
 
-Some basics of the Connector Shell were introduced in the [Random Connector]
-(https://github.com/jthielens/connector-random/).  In particular, the Random
+Some basics of the Connector Shell were introduced in the
+[Random Connector](https://github.com/jthielens/connector-random/)
+In particular, the Random
 connector illustrates the structure of a Connector Shell project and its schema,
 configuration, and client command processor classes.  But as a simple source and
 sink of random byte streams, its command support is artificially limited to
