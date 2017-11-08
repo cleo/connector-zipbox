@@ -5,7 +5,7 @@ technologies to be plugged in to be configured and used by the administrator.
 
 This sample project provides an extended example of a connector, intended to expand
 on the concept introduced in the
-[Random]((https://github.com/jthielens/connector-random/) connector.
+[Random](https://github.com/jthielens/connector-random/) connector.
 It provides support for handling ZIP archives as if they were expanded folders,
 including uploading and downloading files and manipulation of directories.
 For example, if a Zip connection is used as a VersaLex user's home directory,
