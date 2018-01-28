@@ -8,7 +8,7 @@ on the concept introduced in the
 [Random](https://github.com/jthielens/connector-random/) connector.
 It provides support for handling ZIP archives as if they were expanded folders,
 including uploading and downloading files and manipulation of directories.
-For example, if a Zip connection is used as a VersaLex user's home directory,
+For example, if a ZipBox connection is used as a VersaLex user's home directory,
 all of the user's files will be managed in a single Zip archive in the underlying
 file system.
 
@@ -18,11 +18,11 @@ The POM for this project creates a ZIP archive intended to be expanded from
 the Harmony/VLTrader installation directory (`$CLEOHOME` below).
 
 ```
-git clone git@github.com:jthielens/connector-zip.git
+git clone git@github.com:jthielens/connector-zipbox.git
 mvn clean package
-cp target/zip-5.4.1.0-SNAPSHOT-distribution.zip $CLEOHOME
+cp target/zipbox-5.4.1.0-SNAPSHOT-distribution.zip $CLEOHOME
 cd $CLEOHOME
-unzip -o zip-5.4.1.0-SNAPSHOT-distribution.zip
+unzip -o zipbox-5.4.1.0-SNAPSHOT-distribution.zip
 ./Harmonyd stop
 ./Harmonyd start
 ```
@@ -45,7 +45,7 @@ configuration, and client command processor classes.  But as a simple source and
 sink of random byte streams, its command support is artificially limited to
 `GET`, `PUT`, and simple stubs for `DELETE` and `ATTR`.
 
-The Zip Connector emulates a complete read/write file system folder packed into
+The ZipBox Connector emulates a complete read/write file system folder packed into
 a single Zip file.  It rounds out the command set to include:
 
 * file upload and download with `GET` and `PUT`
