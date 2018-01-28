@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cleo.labs.connector</groupId>
-    <artifactId>zip</artifactId>
+    <artifactId>zipbox</artifactId>
     <version>5.4.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>connector-zip</name>
+    <name>connector-zipbox</name>
     <url>http://maven.apache.org</url>
 
     <distributionManagement>
