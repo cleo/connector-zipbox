@@ -1,4 +1,4 @@
-package com.cleo.labs.connector.zip;
+package com.cleo.labs.connector.zipbox;
 
 import static com.cleo.connector.api.command.ConnectorCommandName.ATTR;
 import static com.cleo.connector.api.command.ConnectorCommandName.DELETE;
@@ -40,18 +40,18 @@ import com.cleo.connector.api.directory.Entry;
 import com.cleo.connector.api.helper.Attributes;
 import com.cleo.connector.api.interfaces.IConnectorIncoming;
 import com.cleo.connector.api.interfaces.IConnectorOutgoing;
-import com.cleo.labs.connector.zip.ZipEditor.ZipProcessResult;
+import com.cleo.labs.connector.zipbox.ZipEditor.ZipProcessResult;
 import com.google.common.base.Strings;
 
-public class ZipConnectorClient extends ConnectorClient {
-    private ZipConnectorConfig config;
+public class ZipBoxConnectorClient extends ConnectorClient {
+    private ZipBoxConnectorConfig config;
 
     /**
-     * Constructs a new {@code ZipConnectorClient} for the schema
-     * @param schema the {@code ZipConnectorSchema}
+     * Constructs a new {@code ZipBoxConnectorClient} for the schema
+     * @param schema the {@code ZipBoxConnectorSchema}
      */
-    public ZipConnectorClient(ZipConnectorSchema schema) {
-        this.config = new ZipConnectorConfig(this, schema);
+    public ZipBoxConnectorClient(ZipBoxConnectorSchema schema) {
+        this.config = new ZipBoxConnectorConfig(this, schema);
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.cleo.labs.connector.zip;
+package com.cleo.labs.connector.zipbox;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -10,8 +10,8 @@ import java.util.zip.ZipEntry;
 
 import org.junit.Test;
 
-import com.cleo.labs.connector.zip.ZipEditor.ZipProcessResult;
-import com.cleo.labs.connector.zip.ZipEditor.ZipWriter;
+import com.cleo.labs.connector.zipbox.ZipEditor.ZipProcessResult;
+import com.cleo.labs.connector.zipbox.ZipEditor.ZipWriter;
 
 public class TestZipEditor {
     static private final String HELLO = "hello, world!\n";

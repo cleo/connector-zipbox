@@ -1,15 +1,15 @@
-package com.cleo.labs.connector.zip;
+package com.cleo.labs.connector.zipbox;
 
 import java.util.zip.Deflater;
 
 import com.cleo.connector.api.property.ConnectorPropertyException;
 import com.google.common.base.Strings;
 
-public class ZipConnectorConfig {
-    private ZipConnectorClient client;
-    private ZipConnectorSchema schema;
+public class ZipBoxConnectorConfig {
+    private ZipBoxConnectorClient client;
+    private ZipBoxConnectorSchema schema;
 
-    public ZipConnectorConfig(ZipConnectorClient client, ZipConnectorSchema schema) {
+    public ZipBoxConnectorConfig(ZipBoxConnectorClient client, ZipBoxConnectorSchema schema) {
         this.client = client;
         this.schema = schema;
     }
@@ -20,7 +20,7 @@ public class ZipConnectorConfig {
 
     public int getCompressionLevel() throws ConnectorPropertyException {
         String value = schema.compressionLEvel.getValue(client);
-        if (Strings.isNullOrEmpty(value) || value.equalsIgnoreCase(ZipConnectorSchema.DEFAULT)) {
+        if (Strings.isNullOrEmpty(value) || value.equalsIgnoreCase(ZipBoxConnectorSchema.DEFAULT)) {
             return Deflater.DEFAULT_COMPRESSION;
         } else {
             try {

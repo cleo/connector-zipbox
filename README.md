@@ -5,7 +5,7 @@ technologies to be plugged in to be configured and used by the administrator.
 
 This sample project provides an extended example of a connector, intended to expand
 on the concept introduced in the
-[Random](https://github.com/jthielens/connector-random/) connector.
+[Random](https://github.com/cleo/connector-random/) connector.
 It provides support for handling ZIP archives as if they were expanded folders,
 including uploading and downloading files and manipulation of directories.
 For example, if a ZipBox connection is used as a VersaLex user's home directory,
@@ -18,18 +18,18 @@ The POM for this project creates a ZIP archive intended to be expanded from
 the Harmony/VLTrader installation directory (`$CLEOHOME` below).
 
 ```
-git clone git@github.com:jthielens/connector-zipbox.git
+git clone git@github.com:cleo/connector-zipbox.git
 mvn clean package
-cp target/zipbox-5.4.1.0-SNAPSHOT-distribution.zip $CLEOHOME
+cp target/zipbox-5.5.0.0-distribution.zip $CLEOHOME
 cd $CLEOHOME
-unzip -o zipbox-5.4.1.0-SNAPSHOT-distribution.zip
+unzip -o zipbox-5.5.0.0-distribution.zip
 ./Harmonyd stop
 ./Harmonyd start
 ```
 
 When Harmony/VLTrader restarts, you will see a new `Template` in the host tree
-under `Connections` > `Generic` > `Generic ZIP`.  Select `Clone and Activate`
-and a new `ZIP` connection (host) will appear on the `Active` tab.
+under `Connections` > `Generic` > `Generic ZIPBox`.  Select `Clone and Activate`
+and a new `ZIPBox` connection (host) will appear on the `Active` tab.
 
 Change the default `<receive>` action to read `GET test.bin` (instead of `GET *`)
 and run the action.  You will find a 1k (1024 byte) file of nulls in `inbox/test.bin`.
@@ -38,7 +38,7 @@ and run the action.  You will find a 1k (1024 byte) file of nulls in `inbox/test
 
 
 Some basics of the Connector Shell were introduced in the
-[Random Connector](https://github.com/jthielens/connector-random/)
+[Random Connector](https://github.com/cleo/connector-random/)
 In particular, the Random
 connector illustrates the structure of a Connector Shell project and its schema,
 configuration, and client command processor classes.  But as a simple source and

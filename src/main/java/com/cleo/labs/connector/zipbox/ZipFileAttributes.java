@@ -1,4 +1,4 @@
-package com.cleo.labs.connector.zip;
+package com.cleo.labs.connector.zipbox;
 
 import java.io.File;
 import java.io.IOException;

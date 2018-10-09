@@ -1,4 +1,4 @@
-package com.cleo.labs.connector.zip;
+package com.cleo.labs.connector.zipbox;
 
 import java.io.IOException;
 import java.nio.file.attribute.DosFileAttributeView;

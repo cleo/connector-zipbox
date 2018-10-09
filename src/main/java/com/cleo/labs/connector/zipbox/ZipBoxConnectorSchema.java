@@ -1,4 +1,4 @@
-package com.cleo.labs.connector.zip;
+package com.cleo.labs.connector.zipbox;
 
 import java.io.IOException;
 
@@ -15,11 +15,11 @@ import com.cleo.connector.api.property.PropertyBuilder;
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 
-@Connector(scheme = "zip", description = "Zip File Browser",
+@Connector(scheme = "ZIPBox", description = "Mailbox in a Zip File",
            excludeType = { @ExcludeType(type = ExcludeType.SentReceivedBoxes),
                            @ExcludeType(type = ExcludeType.Exchange) })
-@Client(ZipConnectorClient.class)
-public class ZipConnectorSchema extends ConnectorConfig {
+@Client(ZipBoxConnectorClient.class)
+public class ZipBoxConnectorSchema extends ConnectorConfig {
     @Property
     final IConnectorProperty<String> zipFile = new PropertyBuilder<>("ZipFile", "")
             .setRequired(false)
@@ -42,6 +42,6 @@ public class ZipConnectorSchema extends ConnectorConfig {
 
     @Info
     protected static String info() throws IOException {
-        return Resources.toString(ZipConnectorSchema.class.getResource("info.txt"), Charsets.UTF_8);
+        return Resources.toString(ZipBoxConnectorSchema.class.getResource("info.txt"), Charsets.UTF_8);
     }
 }
