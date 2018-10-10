@@ -8,7 +8,7 @@ on the concept introduced in the
 [Random](https://github.com/cleo/connector-random/) connector.
 It provides support for handling ZIP archives as if they were expanded folders,
 including uploading and downloading files and manipulation of directories.
-For example, if a ZipBox connection is used as a VersaLex user's home directory,
+For example, if a ZIPBox connection is used as a VersaLex user's home directory,
 all of the user's files will be managed in a single Zip archive in the underlying
 file system.
 
