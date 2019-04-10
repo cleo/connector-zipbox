@@ -20,9 +20,9 @@ the Harmony/VLTrader installation directory (`$CLEOHOME` below).
 ```
 git clone git@github.com:cleo/connector-zipbox.git
 mvn clean package
-cp target/zipbox-5.5.0.0-distribution.zip $CLEOHOME
+cp target/zipbox-5.6.0.0-distribution.zip $CLEOHOME
 cd $CLEOHOME
-unzip -o zipbox-5.5.0.0-distribution.zip
+unzip -o zipbox-5.6.0.0-distribution.zip
 ./Harmonyd stop
 ./Harmonyd start
 ```
